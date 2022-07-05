@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="#FFF"
+        android:elevation="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="在线翻译"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginBottom="543dp"
+        android:background="@drawable/spinner_border"
+        android:baselineAligned="false"
+        android:entries="@array/languages" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="142dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/spinner_border"
+        android:baselineAligned="false"
+        android:entries="@array/languages" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="346dp"
+        android:onClick="translate"
+        android:text="翻译" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="top"
+        android:hint="请输入要翻译的文字内容"
+        android:maxLength="6000"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorLink="#ABABAB" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/textview_border"
+        android:gravity="top"
+        android:maxLength="6000"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textColorLink="#ABABAB" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="⇄"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>
